@@ -32,7 +32,7 @@ This project is a simple React application that utilizes Vite for fast developme
    Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/Prashant0110/Html_to_JSX_Convertertps://github.com/yourusername/my-react-app.git
+   git clone https://github.com/Prashant0110/Html_to_JSX_Converter
    ```
 
 2. **Navigate to the Project Directory**:
