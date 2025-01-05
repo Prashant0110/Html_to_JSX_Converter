@@ -32,7 +32,7 @@ This project is a simple React application that utilizes Vite for fast developme
    Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/my-react-app.git
+   git clone https://github.com/Prashant0110/Html_to_JSX_Convertertps://github.com/yourusername/my-react-app.git
    ```
 
 2. **Navigate to the Project Directory**:
@@ -96,43 +96,6 @@ This project is a simple React application that utilizes Vite for fast developme
 - You will see the HTML to JSX converter interface.
 - Input either a URL or raw HTML in the provided fields and click "Convert" to see the converted JSX output.
 - You can copy the converted JSX to your clipboard using the "Copy JSX" button.
-
-### API Endpoint
-
-#### Convert HTML to JSX
-
-- **URL**: `POST /convert`
-- **Request Body**: JSON object containing either `url` or `html`.
-
-### Example Request Using Postman
-
-1. Open Postman.
-2. Set the request type to `POST`.
-3. Enter the URL: `http://localhost:3000/convert`.
-4. In the Body tab, select `raw` and set the type to `JSON`.
-5. Use the following JSON for the request body:
-
-```json
-{
-  "html": "<div class=\"cod\"> Hello </div>"
-}
-```
-
-6. Click `Send`.
-
-### Testing with a Sample URL
-
-You can test the API with a sample HTML page. For example, you can use:
-
-```json
-{
-  "url": "https://www.w3schools.com/html/html_examples.asp"
-}
-```
-
-This will fetch the HTML from the provided URL and convert it to JSX.
-
-### Configuration
 
 - **Tailwind CSS**: The project uses Tailwind CSS for styling. The configuration can be found in `tailwind.config.js`.
 - **PostCSS**: The PostCSS configuration is located in `postcss.config.cjs`.
