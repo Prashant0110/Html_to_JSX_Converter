@@ -6,7 +6,7 @@ const Dashboard = () => {
   const [html, setHtml] = useState("");
   const [jsxOutput, setJsxOutput] = useState("");
   const [error, setError] = useState("");
-  const [copySuccess, setCopySuccess] = useState(false); // For feedback after copying
+  const [copySuccess, setCopySuccess] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,7 +27,7 @@ const Dashboard = () => {
   const handleCopy = () => {
     navigator.clipboard.writeText(jsxOutput);
     setCopySuccess(true);
-    setTimeout(() => setCopySuccess(false), 2000); // Reset the copy feedback after 2 seconds
+    setTimeout(() => setCopySuccess(false), 2000);
   };
 
   return (
@@ -70,7 +70,6 @@ const Dashboard = () => {
         <div className="mt-4">
           <h2 className="text-xl font-bold">Converted JSX:</h2>
           <div className="bg-gray-100 p-4 rounded overflow-auto max-h-60">
-            {/* Ensure the JSX code is scrollable horizontally and word-wrapped */}
             <pre className="whitespace-pre-wrap break-words">{jsxOutput}</pre>
           </div>
           <button
